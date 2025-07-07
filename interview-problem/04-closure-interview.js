@@ -5,7 +5,7 @@
 // global scope
 function local(){
     // local scope
-    var username = 'Roadsidecoder'
+    var username = 'satyam'
     console.log(username)
 }
 local()
