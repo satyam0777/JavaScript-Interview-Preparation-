@@ -28,7 +28,7 @@ let user = {
       childObj:{
           newName:"Roadside Coder",
           getDetails() {
-              console.log(this.newName, "and" ,this.name)
+              console.log(this.newName, "and" ,this.name) // This will not work as this.name is not defined in childObj
           }
       }
 };
@@ -43,7 +43,7 @@ class user {
         this.name = n
     }
     getName(){
-        console.log(this.name);
+        console.log(this.name); //
     }
 }
 
