@@ -13,10 +13,10 @@ console.log(func);
 // Computed Properties
 
 let property = "firstName"
-let name = "Piyush Agarwal"
+let name1 = "Piyush Agarwal"
 
-let person = {
-  [property]: name,
+let person1 = {
+  [property]: name1,
 };
 
 // Accessing
@@ -198,9 +198,9 @@ const multiply = (x = { ...value }) => {
   console.log((x.number *= 2));
 };
 
+multiply();// This will modify the original value object
 multiply();
-multiply();
-multiply(value);
+multiply(value); // This will not affect the original value object
 multiply(value);
 
 
@@ -223,8 +223,9 @@ const personObj1 = {
 
 const personObj2 = changeAgeAndReference(personObj1);
 
-console.log(personObj1); // -> ?
-console.log(personObj2); // -> ?
+console.log(personObj1); // -> { name: 'Alex', age: 25 }
+
+console.log(personObj2); // -> { name: 'John', age: 50 }
 
 
 // Question 18 : Shallow copy VS Deep copy
