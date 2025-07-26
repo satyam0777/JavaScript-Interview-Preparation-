@@ -8,7 +8,7 @@ function sayHello(){
 }
           
 var obj = {name: "Piyush"};        
-sayHello.call(obj);
+sayHello.call(obj); // Hello Piyush
 
 
 // Question 2 : What is Apply?
@@ -18,7 +18,7 @@ function sayHello(day){
 }
           
 var obj = {name: "Piyush"};        
-sayHello.apply(obj, day);
+sayHello.apply(obj, day); // Hello Piyush today is day
 
 
 // Question 3 : What is Bind?
